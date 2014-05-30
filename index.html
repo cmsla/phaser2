@@ -2,11 +2,11 @@
   <head>
   <title>
   </title>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/phaser/2.0.4/phaser.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/phaser/2.0.4/phaser.min.js"></script>
   </head>
   <body>
     <script>
- var game = new Phaser.Game(800, 720, Phaser.AUTO, { preload: preload, create: create });
+ var game = new Phaser.Game(800, 720, Phaser.AUTO.'', { preload: preload, create: create });
 
 
 function preload() {
@@ -19,14 +19,14 @@ function preload() {
     //  blank frames at the end, so we tell the loader how many to load
 
 
-    game.load.spritesheet('mummy', 'ani.jpg', 340, 743, 18);
+    game.load.spritesheet('mummy', 'ani.jpg', 340, 733, 18);
 }
 
 
 function create() {
 
 
-    var mummy = game.add.sprite(0, 0, 'mummy');
+    var mummy = game.add.sprite(300, 0, 'mummy');
 
 
     //  Here we add a new animation called 'walk'
