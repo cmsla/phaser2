@@ -6,7 +6,7 @@
   </head>
   <body>
     <script>
- var game = new Phaser.Game(1280, 720, Phaser.AUTO, 'phaser-example', { preload: preload, create: create });
+ var game = new Phaser.Game(800, 720, Phaser.AUTO, 'phaser-example', { preload: preload, create: create });
 
 
 function preload() {
@@ -26,7 +26,7 @@ function preload() {
 function create() {
 
 
-    var mummy = game.add.sprite(300, 0, 'mummy');
+    var mummy = game.add.sprite(0, 0, 'mummy');
 
 
     //  Here we add a new animation called 'walk'
